@@ -14,6 +14,8 @@
     "clock"
   ],
   "modules-right": [
+    "mpris",
+    "custom/separator",
     "tray",
     "custom/vpn",
     "custom/separator",
@@ -25,22 +27,20 @@
     "sort-by-number": true
   },
   "custom/cpucat": {
-    "exec": "/home/tri/.config/waybar/scripts/catloop.sh",
+    "exec": "~/.config/waybar/scripts/catloop.sh",
     "on-click": "fuzzel"
   },
   "wireplumber": {
     "scroll-step": 1,
     "format": " {icon} {volume}%",
-    "format-muted": "󰝟 muted",
+    "format-muted": "",
     "on-click": "pavucontrol",
     "format-icons": {
       "default": [
-        "󰕿",
-        "󰖀",
-        "󰕾"
+        "",
+        "",
+        ""
       ],
-      "headphones": "󰋋",
-      "headset": "󰋎"
     }
   },
   "clock": {
@@ -48,7 +48,7 @@
   },
   "custom/vpn": {
     "format": "{}",
-    "exec": "/home/tri/.config/waybar/scripts/vpn-status.sh",
+    "exec": "~/.config/waybar/scripts/vpn-status.sh",
     "return-type": "json",
     "interval": 2
   },
@@ -60,5 +60,24 @@
   "tray": {
     "icon-size": 18,
     "spacing": 10
+  },
+  "mpris": {
+    "format": "{player_icon} {artist} — {title}",
+    "format-paused": "{status_icon} <i>{artist} — {title}</i>",
+    "player-icons": {
+      "default": "",
+      "chromium": ""
+    },
+    "status-icons": {
+      "paused": ""
+    },
+    "max-length": 40,
+    "player": "chromium",
+    "ignored-players": [
+      "firefox"
+    ],
+    "on-click": "playerctl -p chromium play-pause",
+    "on-click-right": "playerctl -p chromium next",
+    "on-click-middle": "playerctl -p chromium previous"
   }
 }
