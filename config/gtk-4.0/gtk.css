@@ -1,0 +1,111 @@
+/* === ТВОЯ ПАЛИТРА KANAGAWA DRAGON === */
+@define-color bg0 #181616;
+@define-color bg1 #222020;
+@define-color bg2 #2a2828;
+@define-color bg3 #363434;
+
+@define-color fg #c5c9c5;
+@define-color fg1 #e6e2cc;
+@define-color fg2 #a8a8a2;
+
+@define-color red #c4746e;
+@define-color orange #b6927b;
+@define-color yellow #c4b28a;
+@define-color green #8a9a7b;
+@define-color aqua #8ea4a2;
+@define-color blue #8ba4b0;
+@define-color purple #a292a3;
+
+@define-color grey0 #a6a69c;
+@define-color grey1 #7e7e75;
+@define-color grey2 #54544f;
+
+/* === ВНУТРЕННИЕ СИСТЕМНЫЕ ПЕРЕМЕННЫЕ LIBADWAITA === */
+@define-color window_bg_color rgba(24, 22, 22, 0.65);
+@define-color window_fg_color #c5c9c5;
+@define-color view_bg_color transparent;
+@define-color view_fg_color #c5c9c5;
+@define-color headerbar_bg_color rgba(24, 22, 22, 0.85);
+@define-color headerbar_fg_color #e6e2cc;
+@define-color headerbar_border_color #54544f;
+@define-color sidebar_bg_color rgba(18, 18, 18, 0.5);
+@define-color sidebar_fg_color #c5c9c5;
+@define-color accent_bg_color #8ba4b0;
+@define-color accent_fg_color #181616;
+@define-color accent_color #8ea4a2;
+
+/* === СТИЛИЗАЦИЯ ЭЛЕМЕНТОВ === */
+
+/* Окно Nautilus */
+window,
+.nautilus-window {
+    background-color: rgba(24, 22, 22, 0.65);
+    color: @fg;
+}
+
+/* Шапка */
+headerbar {
+    background-color: rgba(24, 22, 22, 0.85);
+    border-bottom: 1px solid @grey2;
+    color: @fg1;
+}
+
+headerbar button:hover {
+    background-color: @bg3;
+    color: @fg1;
+}
+
+/* Боковая панель */
+.navigation-sidebar,
+sidebar {
+    background-color: rgba(18, 18, 18, 0.5);
+    color: @fg;
+}
+
+.navigation-sidebar row:selected {
+    background-color: @bg2;
+    color: @blue;
+    font-weight: bold;
+}
+
+.navigation-sidebar row:hover {
+    background-color: @bg3;
+}
+
+/* Область файлов */
+.nautilus-window .content-page,
+.nautilus-window scrolledwindow,
+.nautilus-window gridview,
+.nautilus-window listview,
+.nautilus-window .view {
+    background-color: transparent;
+    background-image: none;
+}
+
+/* Выделение и ховер папок */
+.nautilus-window gridview child:selected,
+.nautilus-window listview row:selected {
+    background-color: rgba(139, 164, 176, 0.35);
+    border: 1px solid @aqua;
+    color: @fg1;
+    border-radius: 10px;
+}
+
+.nautilus-window gridview child:hover,
+.nautilus-window listview row:hover {
+    background-color: rgba(54, 52, 52, 0.4);
+    border-radius: 10px;
+}
+
+/* Кнопки пути в шапке */
+headerbar .path-bar button {
+    background-color: @bg1;
+    border: 1px solid @grey2;
+    color: @fg;
+    border-radius: 6px;
+}
+
+headerbar .path-bar button:hover {
+    background-color: @bg3;
+    color: @fg1;
+}

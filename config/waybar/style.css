@@ -1,0 +1,93 @@
+* {
+    font-family: "GeistMono Nerd Font Propo", monospace;
+    font-weight: 800;
+    font-size: 13px;
+    color: #c5c9c5;
+}
+
+window#waybar {
+    background: #151515;
+    border-radius: 0;
+    margin: 0px;
+    padding: 0px 0px;
+}
+
+/* WORKSPACES */
+
+#workspaces button {
+    padding: 0px 1px;
+    margin: 3px 2px;
+    border-radius: 0;
+    background: transparent;
+    color: #5b4950;
+}
+
+/* active workspace */
+#workspaces button.active {
+    border-bottom: 2px solid #c5c9c5;
+
+}
+
+/* hover */
+#workspaces button:hover {
+    background: #1e1e1e;
+}
+
+/* urgent */
+#workspaces button.urgent {
+    background: #5b4950;
+}
+
+/* RIGHT SIDE STATES */
+
+#wireplumber.muted {
+    opacity: 0.6;
+}
+#wireplumber {
+    margin-right: 10px;
+}
+
+/*  TOOLTIP  */
+
+tooltip {
+    background: #111111;
+    border: 1px solid #333333;
+}
+
+tooltip label {
+    color: #e0def4;
+    font-size: 11px;
+}
+
+#custom-cpucat {
+  font-family: "Waycat", monospace;
+  font-size: 22px;
+  font-weight: bold;
+  color: #c5c9c5;
+  padding-left: 5px;
+  padding-right: 8px;
+}
+
+#custom-vpn {
+    padding: 5px 10px;
+    border-radius: 0px;
+    font-weight: bold;
+}
+
+#custom-vpn.connected {
+    color: #c5c9c5; /* Зеленый цвет Catppuccin / Активный стиль */
+    background-color: transparent;
+}
+
+#custom-vpn.disconnected {
+    color: #474947; /* Серый / Неактивный стиль */
+    background-color: transparent;
+}
+
+#clock {
+    padding: 10px 10px;
+}
+
+#custom-separator {
+    color: #54544f;           /* Цвет разделителя */
+}
