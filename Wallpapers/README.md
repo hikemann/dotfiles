@@ -20,6 +20,7 @@
 
 <img width="3840" height="2160" alt="nixos" src="https://github.com/user-attachments/assets/6448e403-6362-4030-ac45-a97bb96087df" />
 
-<img width="3840" height="2160" alt="nixos" src="https://github.com/user-attachments/assets/65645460-3581-428f-be1b-ada312640bd5" />
+<img width="3840" height="2160" alt="nixos-code" src="https://github.com/user-attachments/assets/2f7af189-ffe2-4d5e-ab5a-24e2135edb77" />
 
-<img width="3840" height="2160" alt="nixos" src="https://github.com/user-attachments/assets/4f38af11-7947-4888-b3ff-a607248d18a7" />
+<img width="3840" height="2160" alt="planet" src="https://github.com/user-attachments/assets/157c2a8f-b777-4791-bbe3-3fefdd969250" />
+
