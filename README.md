@@ -1,4 +1,4 @@
-<img width="1895" height="1012" alt="image" src="https://github.com/user-attachments/assets/37063480-ae66-4502-acb1-149cb26ea9f2" /># Triceo's NixOS Dotfiles for Hyprland
+# Triceo's NixOS Dotfiles for Hyprland
 ## No automated install script, just copy .config (you won't get the same stuff as on the screenshots)
 
 ## [Wallpapers](https://github.com/triceoo/dotfiles/blob/main/Wallpapers/README.md)
