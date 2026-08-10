@@ -1,6 +1,8 @@
 # Triceo's NixOS Dotfiles for Hyprland
 ## No automated install script, just copy .config (you won't get the same stuff as on the screenshots)
 
+## [Wallpapers](https://github.com/triceoo/dotfiles/blob/main/Wallpapers/README.md)
+
 # Previews
 
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/f07eb0f3-1220-44d6-87dc-920df14f0f3d" />
@@ -11,5 +13,5 @@
 
 ## Credits
 - [Zeibytes](https://www.youtube.com/@Zeibytes) — Providing a base for the Waybar config
-- [wallhaven.cc](wallhaven.cc) — Providing most of the wallpapers
+- [wallhaven](wallhaven.cc) — Providing most of the wallpapers
 
