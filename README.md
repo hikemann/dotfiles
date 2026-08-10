@@ -11,5 +11,5 @@
 
 ## Credits
 - [Zeibytes](https://www.youtube.com/@Zeibytes) — Providing a base for the Waybar config
-- wallhaven.cc — Providing most of the wallpapers
+- [wallhaven.cc](wallhaven.cc) — Providing most of the wallpapers
 
