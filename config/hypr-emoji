@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/hypr-emoji"
+EMOJI_CACHE="$CACHE_DIR/emojis.txt"
+EMOJI_URL="https://raw.githubusercontent.com/github/gemoji/master/db/emoji.json"
+
+mkdir -p "$CACHE_DIR"
+
+if [ ! -f "$EMOJI_CACHE" ]; then
+  curl -s "$EMOJI_URL" | jq -r '.[] | "\( .emoji )|\( .description )"' > "$EMOJI_CACHE"
+fi
+
+SELECTION=$(cat "$EMOJI_CACHE" | sed 's/|/ — /' | fuzzel -d -p "> " -w 45 -l 12)
+
+if [ -n "$SELECTION" ]; then
+  EMOJI=$(echo "$SELECTION" | awk -F ' — ' '{print $1}')
+  NAME=$(echo "$SELECTION" | awk -F ' — ' '{print $2}')
+
+  # 1. Мгновенно копируем в буфер
+  echo -n "$EMOJI" | wl-copy
+
+  # 2. Рендерим иконку
+  ICON_PATH="$CACHE_DIR/icon.png"
+  magick -background none -font "Twitter-Color-Emoji" -pointsize 64 label:"$EMOJI" "$ICON_PATH" 2>/dev/null
+fi

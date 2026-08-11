@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Достаем историю через cliphist, передаем в fuzzel, выбранное декодируем обратно в клипборд
+cliphist list | fuzzel -d -p "󰅍 " -w 60 -l 12 | cliphist decode | wl-copy
