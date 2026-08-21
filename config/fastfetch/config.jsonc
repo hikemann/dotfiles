@@ -1,23 +1,49 @@
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____ 
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|  MINIMAL
+//
+//  by Bina
+
+
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
-  "modules": [
-    "title",
-    "separator",
-    "os",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
-    "display",
-    "wm",
-    "font",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    "disk",
-    "break",
-    "colors"
-  ]
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": "~/.config/fastfetch/logo",
+    "display": {
+        "separator": " ›  "
+    },
+    "modules": [
+	"break",
+        {
+            "type": "os",
+            "key": "OS  ",
+            "format": "cachyos",
+        },
+        {
+            "type": "kernel",
+            "key": "KER ",
+            "format": "linux 7.2",
+        },
+        {
+            "type": "packages",
+            "key": "PKG ", 
+            "format": {},
+        },
+        {
+            "type": "shell",
+            "key": "SH  ",
+            "format": "fish",
+        },
+        {
+            "type": "terminal",
+            "key": "TER ",
+            "format": "foot",
+        },
+        {
+            "type": "wm",
+            "key": "WM  ",
+            "format": "hyprland",
+        },
+        "break",
+    ]
 }
